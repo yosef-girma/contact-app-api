@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mydb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mydb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mydb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mydb",
+    "public": false
+  },
+  "Person": {
+    "dataSource": "db",
+    "public": false
+  },
+  "BaseUser": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "Contact": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "Group": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "UserInfo": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "emailds"
+  },
+  "Feedback": {
+    "dataSource": "db",
+    "public": false
+  }
+}
