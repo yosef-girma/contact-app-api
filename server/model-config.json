@@ -62,5 +62,9 @@
   "Feedback": {
     "dataSource": "db",
     "public": false
+  },
+  "Container": {
+    "dataSource": "storage",
+    "public": true
   }
 }
